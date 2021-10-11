@@ -1,0 +1,2 @@
+<%= xtra.toc :self %>
+<%= xtra.moduledoc "Fibo", include: :all, wrap_code_blocks: "elixir", headlines: 2 %>
