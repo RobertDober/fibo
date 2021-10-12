@@ -1,0 +1,4 @@
+duration:1.0;mem stats:false;sys mem stats:false
+module;test;tags;iterations;elapsed
+Bench.FiboBench	iterative		1	8458279
+Bench.FiboBench	matrix with power n+1		5	2327172
