@@ -25,7 +25,7 @@ describe("matrix_fibo", () => {
   it("works for zero", () => {
     expect(matrix_fibo(0)).to.equal(0n)
   })
-  it("works for the magic 7450", () => {
+  it("should return 4059147755309346858228163... for 7450", () => {
     expect(matrix_fibo(7450)).to.equal(fibo_7450)
   })
   it("works for the magic 12309", () => {
