@@ -11,5 +11,15 @@ function matrix_fibo(n) {
   return pow(base_matrix, n+1)[1][1]
 }
 
+function matrix_fibo_n(n) {
+  if(n<1){ return 0n}
+  return pow(base_matrix, n)[1][0]
+}
 
-export { iter_fibo, matrix_fibo }
+function matrix_fibo_n_1(n) {
+  if(n<2){ return BigInt(n)}
+  return pow(base_matrix, n-1)[0][0]
+}
+
+
+export { iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1 }

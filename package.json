@@ -1,8 +1,8 @@
 {
   "type": "module",
   "dependencies": {
-    "benchmark": "^2.1.4",
     "chai": "^4.3.4",
-    "mocha": "^9.1.2"
+    "mocha": "^9.1.2",
+    "nanobench": "^2.1.1"
   }
 }

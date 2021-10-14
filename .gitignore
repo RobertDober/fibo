@@ -25,3 +25,4 @@ fibo-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 node_modules
+__pycache__
