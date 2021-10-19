@@ -1,4 +1,5 @@
 import {pow} from "./matrix.mjs"
+import {ipow, ppow} from "./pair.mjs"
 import {range} from "./tools.mjs"
 
 function iter_fibo(n) {
@@ -21,5 +22,15 @@ function matrix_fibo_n_1(n) {
   return pow(base_matrix, n-1)[0][0]
 }
 
+const base_pair = [1n, 0n]
+function pair_fibo(n) {
+  if(n<2){ return BigInt(n)}
+  return ppow(base_pair, n)[0]
+}
 
-export { iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1 }
+function ipair_fibo(n) {
+  if(n<2){ return BigInt(n)}
+  return ipow(base_pair, n)[0]
+}
+
+export { ipair_fibo, iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1, pair_fibo }

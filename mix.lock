@@ -1,4 +1,6 @@
 %{
   "benchfella": {:hex, :benchfella, "0.3.5", "b2122c234117b3f91ed7b43b6e915e19e1ab216971154acd0a80ce0e9b8c05f5", [:mix], [], "hexpm", "23f27cbc482cbac03fc8926441eb60a5e111759c17642bac005c3225f5eb809d"},
+  "earmark": {:hex, :earmark, "1.4.16", "2188754e590a3c379fdd2783bb44eedd8c54968fa0256b6f336f6d56b089d793", [:mix], [{:earmark_parser, ">= 1.4.16", [hex: :earmark_parser, repo: "hexpm", optional: false]}], "hexpm", "46f853f7ae10bee06923430dca522ba9dcbdc6b7a9729748e8dd5344d21b8418"},
+  "earmark_parser": {:hex, :earmark_parser, "1.4.16", "607709303e1d4e3e02f1444df0c821529af1c03b8578dfc81bb9cf64553d02b9", [:mix], [], "hexpm", "69fcf696168f5a274dd012e3e305027010658b2d1630cef68421d6baaeaccead"},
   "extractly": {:hex, :extractly, "0.5.3", "ca6afc3430e63cc9017d50eb03bdf1a3499c7e888037d2279b0ec0ea393af390", [:mix], [], "hexpm", "858f7a285ffb767937e75bb8866f03fecb3b7e5b42728a9677d2ebb6ea885503"},
 }

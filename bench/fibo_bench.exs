@@ -35,6 +35,27 @@ defmodule Bench.FiboBench do
     end)
   end
 
+  bench "high pair with power n-1" do
+    1..10 |> Enum.each( fn _ ->
+    make_values(18)
+    |> Enum.each(&Fibo.pair_fibo/1)
+    end)
+  end
+
+  bench "high pair with power n" do
+    1..10 |> Enum.each( fn _ ->
+    make_values(18)
+    |> Enum.each(&Fibo.pair_fibo_n/1)
+    end)
+  end
+
+  bench "pair with ipower" do
+    1..10 |> Enum.each( fn _ ->
+    make_values(18)
+    |> Enum.each(&Fibo.ipair_fibo/1)
+    end)
+  end
+
 
   defp make_values(exp) do
     low = :math.pow(2, exp) |> floor()

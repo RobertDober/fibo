@@ -1,0 +1,7 @@
+duration:1.0;mem stats:false;sys mem stats:false
+module;test;tags;iterations;elapsed
+Bench.FiboBench	high matrix with power n		1	25389319
+Bench.FiboBench	high matrix with power n + 1		1	25332291
+Bench.FiboBench	high matrix with power n - 1		1	25333190
+Bench.FiboBench	high pair with power n		1	42776905
+Bench.FiboBench	high pair with power n-1		1	42866095

@@ -1,7 +1,7 @@
 // import {iter_fibo} from "../js/fibo.js"
 
 import bench from "nanobench"
-import {iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1} from "../js/fibo.mjs";
+import {ipair_fibo, iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1, pair_fibo} from "../js/fibo.mjs";
 import {range} from "../js/tools.mjs";
 
 const low = Math.pow(2, 14)
@@ -35,5 +35,19 @@ bench("matrix fibo_n_1", (b) => {
   b.start()
   argRange
     .forEach(matrix_fibo_n_1)
+  b.end()
+})
+
+bench("pair", (b) => {
+  b.start()
+  argRange
+    .forEach(pair_fibo)
+  b.end()
+})
+
+bench("ipair", (b) => {
+  b.start()
+  argRange
+    .forEach(ipair_fibo)
   b.end()
 })

@@ -52,13 +52,29 @@ defmodule FiboTest do
     @some_more
     |> Enum.map(fn {a, b} -> {a, nil, b} end)
     |> Enum.each( gen_tests.("matrix_fibo_n", "Matrix Fibo (n)", &Fibo.matrix_fibo_n/1) )
-
   end
 
   describe "Matrix Fibo (n-1)" do
     @some_more
     |> Enum.map(fn {a, b} -> {a, nil, b} end)
     |> Enum.each( gen_tests.("matrix_fibo_n_1", "Matrix Fibo (n-1)", &Fibo.matrix_fibo_n_1/1) )
+  end
 
+  describe "Pair Fibo" do
+    @some_more
+    |> Enum.map(fn {a, b} -> {a, nil, b} end)
+    |> Enum.each( gen_tests.("pair_fibo", "Pair Fibo", &Fibo.pair_fibo/1) )
+  end
+
+  describe "Pair Fibo (n)" do
+    @some_more
+    |> Enum.map(fn {a, b} -> {a, nil, b} end)
+    |> Enum.each( gen_tests.("pair_fibo_n", "Pair Fibo (n)", &Fibo.pair_fibo_n/1) )
+  end
+
+  describe "Ipair Fibo" do
+    @some_more
+    |> Enum.map(fn {a, b} -> {a, nil, b} end)
+    |> Enum.each( gen_tests.("ipair_fibo", "IPair Fibo", &Fibo.ipair_fibo/1) )
   end
 end

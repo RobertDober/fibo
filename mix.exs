@@ -22,6 +22,7 @@ defmodule Fibo.MixProject do
   defp deps do
     [
       {:benchfella, "~> 0.3.5"},
+      {:earmark, "~> 1.4.16"},
       {:extractly,  "~> 0.5.3"},
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}

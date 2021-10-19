@@ -3,7 +3,9 @@ const {mocha} = mocha_
 import chai_ from "chai"
 // const {chai} = chai_
 
-import {iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1}  from "../../js/fibo.mjs"
+import {ipair_fibo, iter_fibo, matrix_fibo, matrix_fibo_n, matrix_fibo_n_1, pair_fibo}  from "../../js/fibo.mjs"
+
+import {ppow} from "../../js/pair.mjs"
 
 const expect = chai_.expect
 
@@ -56,5 +58,38 @@ describe("matrix_fibo_n_1", () => {
   })
   it("works for the magic 12309", () => {
     expect(matrix_fibo_n_1(12309)).to.equal(fibo_12309)
+  })
+})
+
+describe("pair_fibo", () => {
+  it("works for zero", () => {
+    expect(pair_fibo(0)).to.equal(0n)
+  })
+  // it("debug_1", () => {
+  //   for (let n=0; n< 20; n++) {
+  //     console.log(ppow([1,0], n))
+  //   }
+  // })
+  it("should return 4059147755309346858228163... for 7450", () => {
+    expect(pair_fibo(7450)).to.equal(fibo_7450)
+  })
+  it("works for the magic 12309", () => {
+    expect(pair_fibo(12309)).to.equal(fibo_12309)
+  })
+})
+describe("ipair_fibo", () => {
+  it("works for zero", () => {
+    expect(ipair_fibo(0)).to.equal(0n)
+  })
+  // it("debug_1", () => {
+  //   for (let n=0; n< 20; n++) {
+  //     console.log(ppow([1,0], n))
+  //   }
+  // })
+  it("should return 4059147755309346858228163... for 7450", () => {
+    expect(ipair_fibo(7450)).to.equal(fibo_7450)
+  })
+  it("works for the magic 12309", () => {
+    expect(ipair_fibo(12309)).to.equal(fibo_12309)
   })
 })
