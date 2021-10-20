@@ -1,4 +1,0 @@
-duration:1.0;mem stats:false;sys mem stats:false
-module;test;tags;iterations;elapsed
-Bench.FiboBench	high matrix with power n + 1		1	40197588
-Bench.FiboBench	normal matrix with power n + 1		1	40112185

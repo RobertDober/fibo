@@ -1,8 +1,0 @@
-duration:1.0;mem stats:false;sys mem stats:false
-module;test;tags;iterations;elapsed
-Bench.FiboBench	high matrix with power n		1	25343851
-Bench.FiboBench	high matrix with power n + 1		1	25068898
-Bench.FiboBench	high matrix with power n - 1		1	25064633
-Bench.FiboBench	high pair with power n		1	42187987
-Bench.FiboBench	high pair with power n-1		1	42187714
-Bench.FiboBench	pair with ipower		1	21104460
